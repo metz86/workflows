@@ -39,3 +39,5 @@ gulp.task('compass', function() {
             .on('error', gutil.log))
         .pipe(gulp.dest('builds/development/css')) //specify destination folder
 });
+
+gulp.task('default', ['coffee', 'js', 'compass']);
